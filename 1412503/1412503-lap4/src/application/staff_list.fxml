@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="571.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.staffController">
+   <children>
+      <Pane layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="949.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="370.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="21.0" prefHeight="129.0" prefWidth="920.0" style="-fx-background-color: #cccccc; -fx-border-radius: 10 10 10 10; -fx-border-color: gray; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <Label layoutX="12.0" layoutY="-11.0" prefHeight="19.0" prefWidth="131.0" style="-fx-background-color: #cccccc; -fx-text-fill: blue;" text="Thông tin nhân viên">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="19.0" text="ID">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="56.0" text="Email ">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="91.0" text="Username">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textId" layoutX="181.0" layoutY="13.0" prefHeight="25.0" prefWidth="268.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></TextField>
+                  <TextField fx:id="textEmail" layoutX="181.0" layoutY="50.0" prefHeight="25.0" prefWidth="268.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></TextField>
+                  <TextField fx:id="textUsername" layoutX="181.0" layoutY="87.0" prefHeight="25.0" prefWidth="268.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></TextField>
+                  <Label layoutX="493.0" layoutY="17.0" text="Fullname">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textName" layoutX="596.0" layoutY="11.0" prefHeight="25.0" prefWidth="268.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></TextField>
+                  <Label layoutX="493.0" layoutY="56.0" text="Salary">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="492.0" layoutY="91.0" text="Password">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textSalary" layoutX="596.0" layoutY="50.0" prefHeight="25.0" prefWidth="268.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="textPass" layoutX="596.0" layoutY="87.0" prefHeight="25.0" prefWidth="268.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></PasswordField>
+               </children></Pane>
+         </children></Pane>
+      <Pane layoutX="26.0" layoutY="231.0" prefHeight="200.0" prefWidth="724.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="231.0">
+         <children>
+            <Pane layoutX="9.0" layoutY="8.0" prefHeight="311.0" prefWidth="929.0" style="-fx-background-color: #cccccc; -fx-border-color: gray; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <TableView fx:id="table_staff" depthTest="ENABLE" editable="true" layoutX="24.0" layoutY="9.0" prefHeight="220.0" prefWidth="880.0" tableMenuButtonVisible="true">
+                   
+                  </TableView>
+                  <Pane layoutX="24.0" layoutY="236.0" prefHeight="61.0" prefWidth="880.0" style="-fx-background-color: #cccccc; -fx-border-color: gray;">
+                     <children>
+                        <Button fx:id="btnAdd" layoutX="116.0" layoutY="18.0" mnemonicParsing="false" onAction="#showAdd" prefHeight="25.0" prefWidth="119.0" text="Add">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnSave" layoutX="332.0" layoutY="18.0" mnemonicParsing="false" onAction="#showSave" prefHeight="25.0" prefWidth="119.0" text="Save">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnExit" layoutX="724.0" layoutY="18.0" mnemonicParsing="false" onAction="#showExit" prefHeight="25.0" prefWidth="119.0" text="Exit">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Label layoutX="437.0" layoutY="14.0" text="STAFF LIST" AnchorPane.leftAnchor="437.0" AnchorPane.rightAnchor="303.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>
